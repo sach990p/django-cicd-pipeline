@@ -1,13 +1,8 @@
-# django-cicd-pipeline
-Automated CI/CD pipeline for a Django app using Jenkins and GitLab CI, deploying to AWS EC2 with automated testing.
+# Django CI/CD Pipeline
+Automated CI/CD for Django app using Jenkins and GitLab CI, deployed to AWS EC2.
 
-
-django-cicd-pipeline/
-├── app/                    # Django app code
-│   ├── manage.py
-│   ├── requirements.txt    # flask==2.0.1, gunicorn==20.1.0, werkzeug==2.0.3
-│   └── app.py              # Simple Django/Flask app
-├── .gitlab-ci.yml          # GitLab CI config
-├── Jenkinsfile             # Jenkins pipeline script
-├── Dockerfile              # Docker image for app
-└── README.md               # Pipeline setup, badges, AWS deployment guide
+![Build Status](https://img.shields.io/badge/build-passing-green)
+## Setup
+1. Configure Jenkins with AWS credentials.
+2. Set up GitLab runner.
+3. Run `docker build -t django-app .`
